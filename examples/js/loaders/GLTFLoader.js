@@ -1956,7 +1956,8 @@ THREE.GLTFLoader = ( function () {
 
 		if ( alphaMode === ALPHA_MODES.BLEND ) {
 
-			materialParams.transparent = true;
+			materialParams.transparent = false; // true
+			//materialParams.opacity = 1;
 
 		} else {
 
